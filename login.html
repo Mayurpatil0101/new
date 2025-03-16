@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .login-container {
+      background: white;
+      padding: 30px;
+      width: 350px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    p a {
+      color: orangered;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .underline {
+      width: 40px;
+      height: 2px;
+      background: black;
+      margin: 10px auto;
+      border: none;
+    }
+
+    .icon img {
+      width: 60px;
+      margin: 10px 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      width: 100%;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: orange;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .login-btn:hover {
+      background-color: darkorange;
+    }
+
+    .terms-text {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    .terms-text a {
+      color: black;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="container">
+    <header>
+      <div>
+        <a href="index.html">
+          <img src="https://res.cloudinary.com/dutdah0l9/image/upload/v1720058694/Swiggy_logo_bml6he.png" alt="">
+        </a>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="">Swiggy Corporate</a>
+          </li>
+          <li>
+            <a href="partner.html">Partner with us</a>
+          </li>
+          <li>
+            <button class="get">Get the App</button>
+          </li>
+          <li>
+            <a href="login.html">
+              <button class="get">Sign In</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="login-container">
+      <button class="close-btn">&times;</button>
+      <h2>Login</h2>
+      <p><a href="#">or create an account</a></p>
+      <hr class="underline">
+      <div class="icon">
+        <img src="./image/Image-login_btpq7r.avif" alt="Wrap Icon">
+      </div>
+      <form>
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" placeholder="Phone number">
+        <button type="submit" class="login-btn">LOGIN</button>
+        <p class="terms-text">
+          By clicking on Login, I accept the <a href="#">Terms & Conditions</a> & <a href="#">Privacy Policy</a>
+        </p>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
