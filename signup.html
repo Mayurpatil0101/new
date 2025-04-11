@@ -1,11 +1,11 @@
-<!-- login.html -->
+<!-- signup.html -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login - Swiggy</title>
+  <title>Signup - Swiggy</title>
   <style>
     * {
       box-sizing: border-box;
@@ -48,14 +48,14 @@
       margin: 10px 0 5px;
     }
 
-    input[type="tel"] {
+    input {
       width: 100%;
       padding: 10px;
       font-size: 16px;
       margin-bottom: 15px;
     }
 
-    .login-btn {
+    .signup-btn {
       width: 100%;
       padding: 12px;
       background: orange;
@@ -66,22 +66,16 @@
       cursor: pointer;
     }
 
-    .login-btn:hover {
+    .signup-btn:hover {
       background: darkorange;
     }
 
-    .terms {
-      font-size: 12px;
-      text-align: left;
-      margin-top: 10px;
-    }
-
-    .signup-link {
+    .login-link {
       margin-top: 15px;
       font-size: 14px;
     }
 
-    .signup-link a {
+    .login-link a {
       color: orange;
       text-decoration: none;
       font-weight: bold;
@@ -101,22 +95,26 @@
   <div class="container">
     <img src="https://res.cloudinary.com/dutdah0l9/image/upload/v1720058694/Swiggy_logo_bml6he.png" alt="Logo"
       class="logo" />
-    <div class="header">Welcome to Swiggy</div>
+    <div class="header">Create Your Swiggy Account</div>
 
     <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+
       <label for="phone">Phone Number</label>
       <input type="tel" id="phone" placeholder="Enter your phone number" required />
 
-      <button class="login-btn" type="submit">LOGIN</button>
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Create a password" required />
 
-      <p class="terms">
-        <input type="checkbox" required /> I accept the <a href="#">Terms & Conditions</a> and <a href="#">Privacy
-          Policy</a>
-      </p>
+      <button class="signup-btn" type="submit">SIGN UP</button>
     </form>
 
-    <div class="signup-link">
-      New to Swiggy? <a href="signup.html">Sign Up</a>
+    <div class="login-link">
+      Already have an account? <a href="login.html">Login</a>
     </div>
   </div>
 
